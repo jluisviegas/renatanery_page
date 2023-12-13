@@ -1,0 +1,29 @@
+---
+import { Image } from "astro:assets";
+import '@fontsource-variable/playfair-display';
+import Container from "./Container.astro";
+
+---
+
+<section>
+	<Container>
+	<div class="flex gap-8 relative">	
+		<div class="flex flex-col w-1/2 items-center justify-center">
+			<h2 class="font-play text-3xl mb-4">Compreenda como resolver seus conflitos </h2>
+			<h3 class="font-play text-2xl text-secondary m-4">Agende sua consulta online e viva o prazer que​ é se conhecer!
+			</h3>
+			<p>Encontre um caminho para a sua tranquilidade e novas maneiras de ser feliz.
+
+			</p>
+			<p>Ferramentas de videochamada disponíveis para seu atendimento: Whatsapp, Skype, Meet, Zoom.</p>
+			<Image src="/renata_perguntas.png" alt="Perguntas mais frequentes" width={600} height={600} class="rounded-t-full mt-12"/>
+		</div>
+		<div>
+			<small class="uppercase text-secondary font-semibold tracking-wider	">Tire suas dúvidas</small>
+			<h2 class="font-play text-3xl">Perguntas Frequentes.	 </h2>
+		</div>
+		<Image src="/shape_2.png" alt="shape" width={400} height={400} class='absolute top-30 right-0 opacity-10'/>
+	</div>
+</Container>
+
+</section>

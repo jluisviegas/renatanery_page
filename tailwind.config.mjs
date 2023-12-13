@@ -7,13 +7,14 @@ export default {
 		extend: {
 			fontFamily: {
 				play: ['Playfair Display Variable', ...defaultTheme.fontFamily.sans],
-				roboto: ['Roboto', ...defaultTheme.fontFamily.sans],
+				mont: ['Montserrat Variable', ...defaultTheme.fontFamily.sans],
 			},
 			colors: {
 				primary: '#E2DDD9',
 				primaryDark: '#dbd3cf',
 				secondary: '#c16e70',
-				accent: '#757871',
+				secondaryDark: '#9D174D',
+				lightBlue: '#BFCDD9',
 			},
 		},
 		screens: {

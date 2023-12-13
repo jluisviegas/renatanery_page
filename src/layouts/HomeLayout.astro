@@ -1,10 +1,11 @@
 ---
-import '@fontsource/roboto';
-import Header from '../components/Header.astro'
+import '@fontsource-variable/montserrat';import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro';
 import Hero from '../components/Hero.astro';
 import About from '../components/About.astro';
 import Benefits from '../components/Benefits.astro';
+import Questions from '../components/Questions.astro';
+import Testemonials from '../components/Testemonials.astro';
 	interface Props {
 	title: string;
 }
@@ -22,12 +23,14 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body class="bg-primary font-roboto">
+	<body class="bg-primary font-mont">
 
 		<Header />
 		<Hero />
 		<Benefits />
 		<About />
+		<Questions />
+		<Testemonials />
 		<slot />
 		<Footer />
 	
