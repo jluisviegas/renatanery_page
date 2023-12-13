@@ -1,7 +1,6 @@
 ---
 import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
-import Link from "./Link.astro";
-
+import Button from './Button.astro';
 const menuitems = [
   {
     title: "Home",
@@ -23,38 +22,26 @@ const menuitems = [
     title: "Opiniões",
     path: "/opinioes",
   },
-{
-		title: "Contato",
-		path: "/contato",
-	 },
 ];
 ---
-<header class="flex flex-col lg:flex-row justify-between items-center my-5">
+<header class="flex flex-col lg:flex-row justify-between items-center my-5 ">
 	<Astronav>
 	  <div class="flex w-full lg:w-auto items-center justify-between">
 
 		 <div class="block lg:hidden">
-			<MenuIcon class="w-4 h-4 text-gray-800" />
+			<MenuIcon class="w-4 h-4 text-rose-800" />
 		 </div>
 	  </div>
 	  <MenuItems class="hidden w-full lg:w-auto mt-2 lg:flex lg:mt-0">
-		 <ul class="flex flex-col lg:flex-row lg:gap-3">
+		 <ul class="flex flex-col lg:flex-row lg:gap-3 ">
 			{
 			  menuitems.map((item, index) => (
 				 <>
-					{item.children && (
-					  <Dropdown
-						 title={item.title}
-						 children={item.children}
-						 lastItem={index === menuitems.length - 1}
-					  />
-					)}
-
 					{!item.children && (
 					  <li>
 						 <a
 							href={item.path}
-							class="flex lg:px-3 py-2 text-gray-600 hover:text-gray-900">
+							class="flex lg:px-3 py-2 text-secondary tracking-widest hover:text-gray-900 font-medium text-sm">
 							{item.title}
 						 </a>
 					  </li>
@@ -64,8 +51,7 @@ const menuitems = [
 			}
 		 </ul>
 		 <div class="lg:hidden flex items-center mt-3 gap-4">
-			<Link href="#" style="muted" block size="md">Log in</Link>
-			<Link href="#" size="md" block>Sign up</Link>
+			<Button href="#" style="primary" block size="md">Contato</Button>
 		 </div>
 	  </MenuItems>
 	</Astronav>

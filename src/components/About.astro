@@ -1,0 +1,29 @@
+---
+import { Image } from "astro:assets";
+const { frontmatter } = Astro.props;
+console.log(frontmatter)
+
+
+---
+<section class="bg-primary min-h-screen flex">
+	<div>
+		<Image src="/renata_sobre.png" alt="Sobre Renata" width={400} height={600}/>
+	</div>
+	<div>
+		<h2>Sobre Mim</h2>
+		<h3>Renata Nery</h3>
+		<p>Psicóloga (CRP 22/04863)</p>
+		<p>Olá, me chamo Renata, sou psicóloga e meu objetivo aqui é auxiliar mais pessoas a se aproximarem de si mesmas, lidarem com suas emoções e viverem a vida de forma livre, independente e plena. Sempre com base nos princípios éticos e da Psicologia como ciência e profissão.
+
+			Para tanto, utilizo o referencial teórico da Cognitivo Comportamental. Também sou Advogada, Pós-graduada em Terapia Cognitivo Comportamental, Orientação Vocacional/Profissional, Psicologia Jurídica/Avaliação Psicológica e Psicologia Hospitalar. 
+			
+			Entendo que no decorrer de nossas vidas, estamos sempre passando por mudanças e em constante construção. É função do psicólogo ajudar no enfrentamento de situações novas e/ou desconhecidas, em que o indivíduo ainda não tem repertório para lidar.
+			Quando nos damos a chance de viver processos terapêuticos, nos abrimos para descobrir formas de seguir com mais clareza.
+			
+			A busca por um psicólogo pode possibilitar a resolução de problemas através de uma escuta ativa, lançando um olhar que gere ajustes no nosso caminhar. Muitas vezes, por ter uma “lanterna” nas mãos, o psicólogo pode “iluminar” situações que passariam despercebidas ou que trariam intenso sofrimento. Essa luminosidade traz transformações e oportunidade de crescimento, superação e autoconhecimento.
+			
+			Se você deseja passar por esse processo comigo, entre em contato e marque uma sessão.
+			Dê esse passo em busca da melhora da sua saúde mental e de viver de forma plena, autêntica e livre.
+			</p>
+	</div>
+</section>
