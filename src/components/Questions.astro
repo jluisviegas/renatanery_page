@@ -2,15 +2,18 @@
 import { Image } from "astro:assets";
 import '@fontsource-variable/playfair-display';
 import Container from "./Container.astro";
+import FAQ from "./FAQ";
+import Button from "./Button.astro";
+
 
 ---
 
-<section>
+<section class="pt-16">
 	<Container>
-	<div class="flex gap-8 relative">	
+	<div class="flex gap-8 relative w-full">	
 		<div class="flex flex-col w-1/2 items-center justify-center">
 			<h2 class="font-play text-3xl mb-4">Compreenda como resolver seus conflitos </h2>
-			<h3 class="font-play text-2xl text-secondary m-4">Agende sua consulta online e viva o prazer que​ é se conhecer!
+			<h3 class="font-play text-2xl text-secondary m-4 font-semibold">Agende sua consulta online e viva o prazer que​ é se conhecer!
 			</h3>
 			<p>Encontre um caminho para a sua tranquilidade e novas maneiras de ser feliz.
 
@@ -18,10 +21,23 @@ import Container from "./Container.astro";
 			<p>Ferramentas de videochamada disponíveis para seu atendimento: Whatsapp, Skype, Meet, Zoom.</p>
 			<Image src="/renata_perguntas.png" alt="Perguntas mais frequentes" width={600} height={600} class="rounded-t-full mt-12"/>
 		</div>
-		<div>
+		<div class="w-1/2">
 			<small class="uppercase text-secondary font-semibold tracking-wider	">Tire suas dúvidas</small>
-			<h2 class="font-play text-3xl">Perguntas Frequentes.	 </h2>
+			<h2 class="font-play text-3xl mb-10">Perguntas Frequentes.</h2>
+			<FAQ client:load />
+			<div class="max-w-xl border-b-2 border-secondaryDark pointer">
+				<div class=" flex justify-between item-center">	
+					<h3 id="accordion-open-heading-1">Terapia online funciona?</h3>
+					<Image src="/down_arrow.png" alt="arrow" width={25} height={10}/>
+				</div>
+				<div class="max-h-0 hidden">
+					<p class="pt-2">As pesquisas mais recentes mostram que 85% das pessoas preferem a terapia online ou a acham tão boa quanto a presencial. Segundo o Conselho Federal de Psicologia, o acompanhamento online possui a mesma eficácia do acompanhamento presencial, além de ser mais em conta e não exigir deslocamentos.</p>
+				</div>
+			</div>
+			<Button style="primary" class='mt-10'>Agende sua Consulta</Button>
+
 		</div>
+
 		<Image src="/shape_2.png" alt="shape" width={400} height={400} class='absolute top-30 right-0 opacity-10'/>
 	</div>
 </Container>

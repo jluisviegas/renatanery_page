@@ -2,26 +2,31 @@
 import '@fontsource-variable/playfair-display';
 import Button from './Button.astro';
 import {Image} from "astro:assets"
+import { motion } from "framer-motion"
+
 
 ---
 
 <section class="flex flex-col md:flex-row max-w-[1600px] min-h-full mx-auto px-16 max-sm:px-5 items-center justify-between gap-8">
 	<div class="flex flex-col justify-center items-center md:items-start">
-		<h2 class="text-xl md:text-3xl font-play">A ajuda que você precisa!</h2>
+		<h2 class="text-xl md:text-3xl font-play text-secondary">A ajuda que você precisa!</h2>
 		<h1 class="text-4xl sm:text-6xl md:text-7xl  font-play mb-10">Psicoterapia Online</h1>
 		<p class="text-xs sm:text-lg">Há conversas que não podem esperar.
 		</p>
-		<p class="text-xs sm:text-lg">Tenha uma orientação psicológica em apenas alguns cliques
+		<p class="text-xs sm:text-lg">Tenha uma orientação psicológica em apenas alguns cliques.
 		</p>
 		<Button style="primary" class='mt-10'>Agende sua Consulta</Button>
-		<Image src='/shape_1.png' alt='Circle' width={250} height={250} class='absolute top-60 -left-28 opacity-10'/> 
+		<Image src='/shape_1.png' alt='Circle' width={450} height={450} class='absolute top-50 -left-28 opacity-10'/> 
 	</div>
 	<div class="relative sm:mr-8 mt-8">
 	<Image src='/renata_hero.jpg' 
 			 alt='Hero Renata' 
 			 width={600} 
 			 height={600}
-			 class='rounded-t-full' />
+			 class='rounded-t-full' 
+			 initial={{ opacity: 0, scale: 0.5 }}
+			 animate={{ opacity: 1, scale: 1 }}
+			 transition={{ duration: 0.5 }}/>
 			<div class="hidden md:block absolute w-48 h-72 bottom-0 -right-24 bg-slate-600 rounded-t-full "/>
 			<div class="hidden md:block absolute w-[100px] h-[200px] bottom-0 -right-36 bg-slate-500 rounded-t-full "/>
 	

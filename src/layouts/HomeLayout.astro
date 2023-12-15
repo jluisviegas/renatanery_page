@@ -6,6 +6,7 @@ import About from '../components/About.astro';
 import Benefits from '../components/Benefits.astro';
 import Questions from '../components/Questions.astro';
 import Testemonials from '../components/Testemonials.astro';
+import Service from '../components/Service.astro';
 	interface Props {
 	title: string;
 }
@@ -23,12 +24,13 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body class="bg-primary font-mont">
+	<body class="bg-primary font-mont overflow-x-hidden">
 
 		<Header />
 		<Hero />
 		<Benefits />
-		<About />
+		<About/>
+		<Service />
 		<Questions />
 		<Testemonials />
 		<slot />

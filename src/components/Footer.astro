@@ -1,24 +1,36 @@
 ---
 import { Image } from "astro:assets";
+import Container from "./Container.astro";
+import { Icon } from 'astro-icon'
 
 ---
 
-<footer class="bg-[#BFCDD9] ">
-
-	<div class="flex text-slate-900 items-center justify-center">
-		<div class="flex flex-col gap-2 flex-1">
-			<h4 class="uppercase text-2xl tracking-wider">Contato</h4>
-			<p>98 991919191</p>
-			<p>contato@renatanery.com.br</p>
-			<p> psi.renatanery</p>
+<footer class="bg-[#3b344f]">
+	<Container>
+	<div class="flex items-center flex-col md:flex-row">
+		<div class="flex-1 items-center">	
+			<Image src="/logo_circlew.png" alt="Logo Circle" width={250} height={250}/>
 		</div>
-		<div class="flex-1">	
-			<Image src="/logo_footer.png" alt="Logo Circle" width={500} height={500}/>
+		<div class="flex flex-col items-center md:items-start gap-2 flex-1 text-primary py-8">
+			<h4 class="uppercase text-2xl mb-6 tracking-widest">Contato</h4>
+			<div class="flex gap-2">
+				<Icon name="ic:baseline-phone" class="w-4" />
+				<p>98 991919191</p>
+			</div>
+			<div class="flex gap-2">
+				<Icon name="ic:round-mail" class="w-4" />
+				<p>contato@renatanery.com.br</p>
+			</div>
+			<div class="flex gap-2">
+				<Icon name="mdi:instagram" class="w-4" />
+				<p>psi.renatanery</p>
+			</div>
 		</div>
-		<div class="flex flex-col items-center flex-1">
+	
+		<div class="flex flex-col justify-center flex-1 text-primary py-4 text-xs sm:text-base">
 			<small>Atenção: Este site não oferece atendimento imediato a pessoas em crise suicida. 
 			</small>
-			<p>Em caso de crise ligue para o CVV - 188
+			<p class="font-semibold">Em caso de crise ligue para o CVV - 188
 			</p>
 			<small>Em caso de emergência, procure o hospital mais próximo.
 			</small>
@@ -26,12 +38,13 @@ import { Image } from "astro:assets";
 		</div>
 	</div>
 
-	<!-- Rodape -->
-	<div class="flex justify-between text-xs bg-[#C16E70] h-10 items-center px-6 flex-wrap text-rose-50 font-medium">
-		<small>Psicólogo Responsável: ​​Renata Nery (​​​CRP 22/04863)</small>
-		<small>Copyright Ⓒ 2024.
-		Desenvolvido por Luis Viegas.
-		</small>
-	</div>
+</Container>
 
+<!-- Rodape -->
+	<div class="flex justify-center sm:justify-between text-xs md:text-base bg-[#C16E70] h-12 items-center sm:px-16 flex-wrap text-rose-50 font-medium">
+	
+		<small>Psicólogo Responsável: ​​Renata Nery (​​​CRP 22/04863)</small>
+		<small>Copyright Ⓒ 2024.Desenvolvido por Luis Viegas.</small>
+
+	</div>
 </footer>
