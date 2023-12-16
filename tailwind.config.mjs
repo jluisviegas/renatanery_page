@@ -16,6 +16,7 @@ export default {
 				secondaryDark: '#9D174D',
 				lightBlue: '#BFCDD9',
 				darkBlue: '#475569',
+				purpleDark: '#3b344f',
 			},
 		},
 		screens: {

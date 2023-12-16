@@ -1,61 +1,64 @@
 ---
 import { Image } from "astro:assets";
 import Container from "./Container.astro";
+import Icon from "astro-icon";
 ---
 
-<section class="min-h-fit bg-[#f5f5f5] p-16">
+<section class="min-h-fit bg-[#f5f5f5] sm:p-16 ">
 	<Container>
 		<div class="flex flex-col items-center justify-center">
-		<h3 class="text-3xl text-secondaryDark font-semibold">O que os pacientes dizem sobre mim.</h3>
-		<h5 class="text-xl italic mb-8">Opiniões dos Pacientes</h5>
+		<h3 class="text-xl md:text-3xl text-secondaryDark font-semibold">O que os pacientes dizem sobre mim.</h3>
+		<h5 class=" text:base md:text-xl italic mb-8">Opiniões dos Pacientes</h5>
 	</div>
 	
-	<div class="flex gap-6">
-		<div class="">
+	<div class="flex flex-col md:flex-row gap-8 my-10">
+		<div class="flex-1">
 			<p class="italic">ACLPO</p>
 			<Image src="/stars.svg" alt="Rating" height={100} width={100}/>
-			<p class="border-t-2 border-lightBlue mt-4 text-sm">Renata é sensacional, uma luz no caminho. Os reflexos positivos da terapia já estão aparecendo. O processo não é fácil, mas é gratificante.</p>
-
-
+			<Icon name="icomoon-free:quotes-left" class="w-8 text-secondary mt-6" />
+			<p class=" mt-4 text-sm">Renata é sensacional, uma luz no caminho. Os reflexos positivos da terapia já estão aparecendo. O processo não é fácil, mas é gratificante.</p>
+		
 		</div>
-		<div class="">
+		<div class="flex-1">
 			<p class="italic">MPS</p>
 			<Image src="/stars.svg" alt="Rating" height={100} width={100}/>
-			<p class="border-t-2 border-lightBlue mt-4 text-sm">Esse momento com a Renata foi incrível. Uma profissional que me deixou bem a vontade pra contar todas as minhas queixas e que conseguiu me fazer refletir sobre coisas que eu não fazia ideia.</p>
-
-
+			<Icon name="icomoon-free:quotes-left" class="w-8 text-secondary mt-6" />
+			<p class=" mt-4 text-sm">Esse momento com a Renata foi incrível. Uma profissional que me deixou bem a vontade pra contar todas as minhas queixas e que conseguiu me fazer refletir sobre coisas que eu não fazia ideia.</p>
+	
 		</div>
-		<div class="">
+		<div class="flex-1">
 			<p class="italic">DVVV</p>
 			<Image src="/stars.svg" alt="Rating" height={100} width={100}/>
-			<p class="border-t-2 border-lightBlue mt-4 text-sm">Excelente consulta, como sempre! A Renata escuta com atenção e me mostra diversos caminhos para meus pensamentos e ideias, a cada sessão me conheço melhor e melhoro um pouquinho do meu bem-estar diário. Muito obrigado!</p>
-
-
+			<Icon name="icomoon-free:quotes-left" class="w-8 text-secondary mt-6" />
+			<p class=" mt-4 text-sm">Excelente consulta, como sempre! A Renata escuta com atenção e me mostra diversos caminhos para meus pensamentos e ideias, a cada sessão me conheço melhor e melhoro um pouquinho do meu bem-estar diário. Muito obrigado!</p>
+		
 		</div>
 		
 	</div>
-	<div class="flex gap-6">
-		<div class="">
+	<div class="flex flex-col md:flex-row gap-8 mb-10">
+		<div class="flex-1">
 			<p class="italic">ACLPO</p>
 			<Image src="/stars.svg" alt="Rating" height={100} width={100}/>
-			<p class="border-t-2 border-lightBlue mt-4 text-sm">Renata é sensacional, uma luz no caminho. Os reflexos positivos da terapia já estão aparecendo. O processo não é fácil, mas é gratificante.</p>
+			<Icon name="icomoon-free:quotes-left" class="w-8 text-secondary mt-6" />
+			<p class="mt-4 text-sm">Renata é sensacional, uma luz no caminho. Os reflexos positivos da terapia já estão aparecendo. O processo não é fácil, mas é gratificante.</p>
+	
 
 
 		</div>
-		<div class="">
+		<div class="flex-1">
 			<p class="italic">MPS</p>
 			<Image src="/stars.svg" alt="Rating" height={100} width={100}/>
-			<p class="border-t-2 border-lightBlue mt-4 text-sm">Esse momento com a Renata foi incrível. Uma profissional que me deixou bem a vontade pra contar todas as minhas queixas e que conseguiu me fazer refletir sobre coisas que eu não fazia ideia.</p>
+			<Icon name="icomoon-free:quotes-left" class="w-8 text-secondary mt-6" />
+			<p class=" mt-4 text-sm">Esse momento com a Renata foi incrível. Uma profissional que me deixou bem a vontade pra contar todas as minhas queixas e que conseguiu me fazer refletir sobre coisas que eu não fazia ideia.</p>
 
 
 		</div>
-		<div class="">
+		<div class="flex-1">
 			<p class="italic">DVVV</p>
 			<Image src="/stars.svg" alt="Rating" height={100} width={100}/>
-			<p class="border-t-2 border-lightBlue mt-4 text-sm">Excelente consulta, como sempre! A Renata escuta com atenção e me mostra diversos caminhos para meus pensamentos e ideias, a cada sessão me conheço melhor e melhoro um pouquinho do meu bem-estar diário. Muito obrigado!</p>
-
-
-		</div>
+			<Icon name="icomoon-free:quotes-left" class="w-8 text-secondary mt-6" />
+			<p class=" mt-4 text-sm">Excelente consulta, como sempre! A Renata escuta com atenção e me mostra diversos caminhos para meus pensamentos e ideias, a cada sessão me conheço melhor e melhoro um pouquinho do meu bem-estar diário. Muito obrigado!</p>
+					</div>
 		
 	</div>
 </Container>
