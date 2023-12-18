@@ -1,7 +1,7 @@
 ---
 import {Image} from "astro:assets"
 import Navbar from "./Navbar.astro";
-import Button from "./Button.astro";
+import Link from "./Link.astro";
 ---
 
 <header
@@ -20,6 +20,6 @@ import Button from "./Button.astro";
     </a>
 	 <Navbar />
 	 <div class="hidden items-center mt-3 gap-4 lg:block">
-	 <Button>Contato</Button>
+	 <Link href="https://api.whatsapp.com/send?phone=5598989344890&text=Ol%C3%A1%2C%20vim%20pelo%20site!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20consulta." style="primary" target="_blank">Contato</Link>
 	 </div>
 </header>

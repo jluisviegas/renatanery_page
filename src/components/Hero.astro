@@ -1,9 +1,7 @@
 ---
 import '@fontsource-variable/playfair-display';
-import Button from './Button.astro';
+import Link from './Link.astro';
 import {Image} from "astro:assets"
-import { motion } from "framer-motion"
-
 
 ---
 
@@ -15,7 +13,7 @@ import { motion } from "framer-motion"
 		</p>
 		<p class="text-xs sm:text-lg">Tenha uma orientação psicológica em apenas alguns cliques.
 		</p>
-		<Button style="primary" class='mt-10'>Agende sua Consulta</Button>
+		<Link href="https://api.whatsapp.com/send?phone=5598989344890&text=Ol%C3%A1%2C%20vim%20pelo%20site!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20consulta." style="primary" target="_blank" class='mt-10'>Agende sua Consulta</Link>
 		<Image src='/shape_1.png' alt='Circle' width={450} height={450} class='absolute top-50 -left-28 opacity-10'/> 
 	</div>
 	<div class="relative sm:mr-8 mt-8">
@@ -23,10 +21,7 @@ import { motion } from "framer-motion"
 			 alt='Hero Renata' 
 			 width={600} 
 			 height={600}
-			 class='rounded-t-full' 
-			 initial={{ opacity: 0, scale: 0.5 }}
-			 animate={{ opacity: 1, scale: 1 }}
-			 transition={{ duration: 0.5 }}/>
+			 class='rounded-t-full'/>
 			<div class="hidden md:block absolute w-48 h-72 bottom-0 -right-24 bg-slate-600 rounded-t-full"/>
 			<div class="hidden md:block absolute w-[100px] h-[200px] bottom-0 -right-36 bg-slate-500 rounded-t-full "/>
 	

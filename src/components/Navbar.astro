@@ -1,6 +1,6 @@
 ---
 import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
-import Button from './Button.astro';
+import Link from "./Link.astro";
 const menuitems = [
   {
     title: "Home",
@@ -51,7 +51,7 @@ const menuitems = [
 			}
 		 </ul>
 		 <div class="lg:hidden flex items-center mt-3 gap-4">
-			<Button href="#" style="primary" block size="md">Contato</Button>
+			<Link href="/footer" style="primary" block size="md">Contato</Link>
 		 </div>
 	  </MenuItems>
 	</Astronav>

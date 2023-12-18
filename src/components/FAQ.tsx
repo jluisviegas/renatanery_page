@@ -62,7 +62,7 @@ export default function FAQ() {
 						onClick={() => handleToggle(index)}
 					>
 						<h3
-							className={`font-semibold text-sm md:text-base ${
+							className={`font-semibold text-xs sm:text-sm ${
 								toggled === index ? 'text-secondaryDark' : 'text-slate-900'
 							}`}
 						>

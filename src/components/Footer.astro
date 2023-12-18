@@ -6,7 +6,7 @@ import Link from "./Link.astro";
 
 ---
 
-<footer class="bg-[#3b344f]">
+<footer class="bg-[#3b344f]" id="footer">
 	<Container>
 	<div class="flex items-center flex-col md:flex-row">
 		<div class="flex-1 items-center">	
@@ -16,15 +16,15 @@ import Link from "./Link.astro";
 			<h4 class="uppercase text-2xl mb-6 tracking-widest">Contato</h4>
 			<div class="flex gap-2">
 				<Icon name="ic:baseline-phone" class="w-4" />
-				<Link href="https://api.whatsapp.com/send?phone=5598989344890&text=Ol%C3%A1%2C%20vim%20pelo%20site!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20consulta." style="outline">(98) 98934-4890</Link>
+				<Link href="https://api.whatsapp.com/send?phone=5598989344890&text=Ol%C3%A1%2C%20vim%20pelo%20site!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20consulta." style="outline" target="_blank">(98) 98934-4890</Link>
 			</div>
 			<div class="flex gap-2">
 				<Icon name="ic:round-mail" class="w-4" />
-				<Link href="mailto:contato@renatanery.com.br" style="outline">contato@renatanery.com.br</Link>
+				<Link href="mailto:contato@renatanery.com.br" style="outline" target="_blank">contato@renatanery.com.br</Link>
 			</div>
 			<div class="flex gap-2">
 				<Icon name="mdi:instagram" class="w-4" />
-				<Link href="https://www.instagram.com/psi.renatanery/" style="outline">psi.renatanery</Link>
+				<Link href="https://www.instagram.com/psi.renatanery/" style="outline" target="_blank">psi.renatanery</Link>
 			</div>
 		</div>
 	
