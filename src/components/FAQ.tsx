@@ -57,10 +57,7 @@ export default function FAQ() {
 					key={index}
 					className="border-b-2 border-secondaryDark cursor-pointer py-6"
 				>
-					<div
-						className=" flex justify-between item-center"
-						onClick={() => handleToggle(index)}
-					>
+					<li className=" flex justify-between item-center w-full">
 						<h3
 							className={`font-semibold text-xs sm:text-sm ${
 								toggled === index ? 'text-secondaryDark' : 'text-slate-900'
@@ -68,8 +65,13 @@ export default function FAQ() {
 						>
 							{question.title}
 						</h3>
-						<img src="/down_arrow.png" alt="arrow" className="w-4 h-4" />
-					</div>
+						<img
+							src="/down_arrow.png"
+							alt="arrow"
+							className="w-4 h-4 cursor-pointer"
+							onClick={() => handleToggle(index)}
+						/>
+					</li>
 					{toggled === index && (
 						<motion.div
 							initial={{ opacity: 0, scale: 0.8 }}
