@@ -5,7 +5,6 @@ import Container from "./Container.astro";
 import FAQ from "./FAQ";
 import Link from "./Link.astro";
 
-
 ---
 
 <section class="pt-16">
@@ -21,6 +20,7 @@ import Link from "./Link.astro";
 			<div class="flex flex-col items-center md:items-start md:w-1/2">
 				<small class="uppercase text-secondary font-semibold tracking-wider	">Tire suas dúvidas</small>
 				<h2 class="font-play text-3xl mb-10">Perguntas Frequentes.</h2>
+				 
 				<FAQ client:load />
 				<Link href="https://api.whatsapp.com/send?phone=5598989344890&text=Ol%C3%A1%2C%20vim%20pelo%20site!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20consulta." class='mt-10'>Agende sua consulta</Link>
 			</div>

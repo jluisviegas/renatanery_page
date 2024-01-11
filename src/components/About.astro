@@ -6,10 +6,10 @@ import Container from "./Container.astro";
 
 
 ---
-<section class="mx-auto min-h-screen py-16">
+<section class="mx-auto min-h-screen py-16" id="sobre">
 	<Container>
-		<div class="flex justify-evenly flex-col md:flex-row">
-			<div class="flex flex-col gap-4 flex-1 relative mr-6 mb-6  text-xs md:text-base">
+		<div class="flex lg:justify-evenly flex-col lg:flex-row">
+			<div class="flex flex-col gap-4 flex-1 relative mr-6 mb-6  text-xs md:text-sm">
 				<h3 class="uppercase text-secondaryDark font-semibold tracking-widest">Sobre Mim</h3>
 				<h2 class="text-3xl font-play italic">Renata Nery</h2>
 				<p class="italic">Psicóloga (CRP 22/04863)</p>
@@ -27,8 +27,8 @@ import Container from "./Container.astro";
 				</p>
 				<Image src="/shape_3.png" alt="shape" width={400} height={400} class='absolute bottom-28 right-0 opacity-10'/>
 			</div>
-			<div class="flex-1 p-4 items-center justify-center">
-				<Image src="/renata_sobre.png" alt="Sobre Renata" width={600} height={650} class='rounded-lg'>
+			<div class="flex-1 p-4 items-center justify-center m-auto">
+				<Image src="/renata_sobre.png" alt="Sobre Renata" width={600} height={650} class='rounded-lg min-h-[650px] object-cover'>
 			</div>
 		</div>
 </Container>

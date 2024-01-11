@@ -1,12 +1,26 @@
 ---
 import '@fontsource-variable/playfair-display';
-
+import '../styles/global.css'
 import HomeLayout from '../layouts/HomeLayout.astro';
+component: 'script'
+
 ---
+<!-- 
+document.addEventListener('DOMContentLoaded', function() {
+	document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+	  anchor.addEventListener('click', function (e) {
+		 e.preventDefault();
+ 
+		 document.querySelector(this.getAttribute('href')).scrollIntoView({
+			behavior: 'smooth'
+		 });
+	  });
+	});
+ }); -->
 
 <HomeLayout title="Renata Nery Psicóloga">
-	<main>
-	<slot />
+	<main >
+		<slot />
 	</main>
 </HomeLayout>
 
